@@ -1,14 +1,14 @@
 module github.com/NYTimes/video-transcoding-api
 
 require (
-	cloud.google.com/go v0.27.0
+	cloud.google.com/go v0.33.1
 	github.com/Gurpartap/logrus-stack v0.0.0-20170710170904-89c00d8a28f4
 	github.com/NYTimes/encoding-wrapper v0.0.0-20170905214245-36fb9db91f13
-	github.com/NYTimes/gizmo v0.2.0
+	github.com/NYTimes/gizmo v0.3.13
 	github.com/NYTimes/gziphandler v1.0.1
 	github.com/NYTimes/logrotate v0.0.0-20170824154650-2b6e866fd507
 	github.com/VividCortex/gohistogram v1.0.0
-	github.com/aws/aws-sdk-go v1.15.21
+	github.com/aws/aws-sdk-go v1.15.83
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 	github.com/bitmovin/bitmovin-go v1.14.0
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052
@@ -16,9 +16,9 @@ require (
 	github.com/fluent/fluent-logger-golang v1.3.0
 	github.com/fsouza/ctxlogger v1.0.0
 	github.com/fsouza/gizmo-stackdriver-logging v1.1.0
-	github.com/go-ini/ini v1.38.2
-	github.com/go-kit/kit v0.7.0
-	github.com/go-logfmt/logfmt v0.3.0
+	github.com/go-ini/ini v1.39.0
+	github.com/go-kit/kit v0.8.0
+	github.com/go-logfmt/logfmt v0.4.0
 	github.com/go-redis/redis v6.14.1+incompatible
 	github.com/go-stack/stack v1.8.0
 	github.com/golang/protobuf v1.2.0
@@ -27,14 +27,14 @@ require (
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/handlers v1.4.0
 	github.com/gorilla/mux v1.6.2
-	github.com/hashicorp/consul v1.2.2
+	github.com/hashicorp/consul v1.4.0
 	github.com/hashicorp/go-cleanhttp v0.5.0
 	github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
 	github.com/hashicorp/serf v0.8.1
 	github.com/hybrik/hybrik-sdk-go v0.0.0-20170516091026-c2eee0e66af9
-	github.com/influxdata/influxdb v1.6.2
-	github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8
-	github.com/julienschmidt/httprouter v0.0.0-20180715161854-348b672cd90d
+	github.com/influxdata/influxdb v1.7.1
+	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
+	github.com/julienschmidt/httprouter v1.2.0
 	github.com/kardianos/osext v0.0.0-20170510131534-ae77be60afb1
 	github.com/kelseyhightower/envconfig v1.3.0
 	github.com/knq/jwt v0.0.0-20180425050837-b171e76ef804
@@ -46,22 +46,22 @@ require (
 	github.com/marzagao/logrus-env v0.0.0-20170629235526-367f558eb6f3
 	github.com/matttproud/golang_protobuf_extensions v1.0.1
 	github.com/mitchellh/go-homedir v1.0.0
-	github.com/mitchellh/mapstructure v1.0.0
+	github.com/mitchellh/mapstructure v1.1.2
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/philhofer/fwd v1.0.0
-	github.com/prometheus/client_golang v0.8.0
+	github.com/prometheus/client_golang v0.9.1
 	github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
-	github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e
-	github.com/prometheus/procfs v0.0.0-20180725123919-05ee40e3a273
-	github.com/sirupsen/logrus v1.0.6
+	github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+	github.com/prometheus/procfs v0.0.0-20181126161756-619930b0b471
+	github.com/sirupsen/logrus v1.2.0
 	github.com/tinylib/msgp v1.0.2
-	golang.org/x/crypto v0.0.0-20180910181607-0e37d006457b
-	golang.org/x/net v0.0.0-20180911220305-26e67e76b6c3
-	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
-	golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e
+	golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85
+	golang.org/x/net v0.0.0-20181114220301-adae6a3d119a
+	golang.org/x/oauth2 v0.0.0-20181120190819-8f65e3013eba
+	golang.org/x/sys v0.0.0-20181122145206-62eef0e2fa9b
 	golang.org/x/text v0.3.0
-	google.golang.org/api v0.0.0-20180910000450-7ca32eb868bf
-	google.golang.org/appengine v1.1.0
-	google.golang.org/genproto v0.0.0-20180911211118-36d5787dc535
-	google.golang.org/grpc v1.15.0
+	google.golang.org/api v0.0.0-20181127174356-0a71a4356c3f
+	google.golang.org/appengine v1.3.0
+	google.golang.org/genproto v0.0.0-20181127195345-31ac5d88444a
+	google.golang.org/grpc v1.16.0
 )

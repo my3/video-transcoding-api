@@ -17,6 +17,7 @@ type Config struct {
 	EncodingCom            *EncodingCom
 	ElasticTranscoder      *ElasticTranscoder
 	ElementalConductor     *ElementalConductor
+	MediaConvert		   *MediaConvert
 	Hybrik                 *Hybrik
 	Zencoder               *Zencoder
 	Bitmovin               *Bitmovin
@@ -59,6 +60,15 @@ type ElementalConductor struct {
 	AccessKeyID     string `envconfig:"ELEMENTALCONDUCTOR_AWS_ACCESS_KEY_ID"`
 	SecretAccessKey string `envconfig:"ELEMENTALCONDUCTOR_AWS_SECRET_ACCESS_KEY"`
 	Destination     string `envconfig:"ELEMENTALCONDUCTOR_DESTINATION"`
+}
+
+// MediaConvert represents the set of configurations for the Elastic
+// Transcoder provider.
+type MediaConvert struct {
+	AccessKeyID     string `envconfig:"AWS_ACCESS_KEY_ID"`
+	SecretAccessKey string `envconfig:"AWS_SECRET_ACCESS_KEY"`
+	Region          string `envconfig:"AWS_REGION"`
+	APIHost         string `envconfig:"MEDIACONVERT_API_HOST"`
 }
 
 // Bitmovin represents the set of configurations for the Bitmovin

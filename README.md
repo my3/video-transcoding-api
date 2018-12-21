@@ -13,6 +13,7 @@ providers:
 - [Elemental Conductor](http://www.elementaltechnologies.com/products/elemental-conductor)
 - [Encoding.com](http://encoding.com)
 - [Amazon Elastic Transcoder](https://aws.amazon.com/elastictranscoder/)
+- [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/)
 - [Zencoder](http://zencoder.com)
 - [Bitmovin](http://bitmovin.com)
 - [Hybrik](https://www.hybrik.com)
@@ -50,6 +51,14 @@ export AWS_ACCESS_KEY_ID=your.access.key.id
 export AWS_SECRET_ACCESS_KEY=your.secret.access.key
 export AWS_REGION="us-east-1"
 export ELASTICTRANSCODER_PIPELINE_ID="yourpipeline-id"
+```
+
+#### For [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/)
+
+```
+export AWS_ACCESS_KEY_ID=your.access.key.id
+export AWS_SECRET_ACCESS_KEY=your.secret.access.key
+export AWS_REGION="us-east-1"
 ```
 
 #### For [Zencoder](http://zencoder.com)

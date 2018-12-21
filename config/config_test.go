@@ -91,6 +91,12 @@ func TestLoadConfigFromEnv(t *testing.T) {
 			SecretAccessKey: "secret-key",
 			Destination:     "https://safe-stuff",
 		},
+		MediaConvert: &MediaConvert{
+			AccessKeyID:     "AKIANOTREALLY",
+			SecretAccessKey: "secret-key",
+			Region:          "us-east-1",
+			APIHost:		 "https://safe-stuff",
+		},
 		Bitmovin: &Bitmovin{
 			APIKey:           "secret-key",
 			Endpoint:         "bitmovin",
