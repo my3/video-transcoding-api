@@ -17,12 +17,7 @@ package mediaconvert
 
 import (
 	"errors"
-	"fmt"
-	"path/filepath"
 	"regexp"
-	"strconv"
-	"strings"
-	"time"
 	"encoding/json"
 
 	"github.com/NYTimes/video-transcoding-api/config"
@@ -59,16 +54,13 @@ type awsProvider struct {
 }
 
 func (p *awsProvider) Transcode(job *db.Job) (*provider.JobStatus, error) {
-
-	svc := mediaconvert.New(mySession)
-
 	var params *mediaconvert.CreateJobInput
 	err := json.Unmarshal([]byte(sampleJson), params)
 	if err != nil {
 		return nil, err;
 	}
 
-	resp, err := svc.CreateJob(params)
+	resp, err := p.c.CreateJob(params)
 	if err != nil {
 		return nil, err;
 	}
@@ -100,6 +92,7 @@ func mediaConvertFactory(cfg *config.Config) (provider.TranscodingProvider, erro
 }
 
 func (p *awsProvider) JobStatus(job *db.Job) (*provider.JobStatus, error) {
+	return nil, nil
 }
 
 func (p *awsProvider) CancelJob(id string) error {
@@ -115,15 +108,19 @@ func (p *awsProvider) Capabilities() provider.Capabilities {
 }
 
 func (p *awsProvider) CreatePreset(preset db.Preset) (string, error) {
+	return "", nil
 }
 
 func (p *awsProvider) DeletePreset(presetID string) error {
+	return nil
 }
 
 func (p *awsProvider) GetPreset(presetID string) (interface{}, error) {
+	return nil, nil
 }
 
 func (p *awsProvider) Healthcheck() error {
+	return nil
 }
 
 var sampleJson = `{
